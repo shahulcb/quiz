@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:left"><a class="active" href="#">QUIZ</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="landing-page">
+            <div class="content-section">
+                <div>
+                    <h1 id="title">QUIZ TIME</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus odio possimus
+                        alias soluta, ea veritatis perspiciatis ab eius laudantium corporis ex blanditiis. Iure
+                        officiis, reiciendis in at expedita laboriosam.</p> -->
+                    <div class="option-section">
+                        <select name="" id="drop-down">
+                            <option value="" selected disabled hidden>Choose a subject</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">Java Script</option>
+                        </select>
+                        <button id="start-btn">START</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="quiz-section" id="quiz-section">
+            <div class="timer-section" id="timer-section">
+                <div>
+                    <h3>Time<span id="timer-screen"></span></h3>
+                </div>
+            </div>
+            <!----     ---------------------------------------------html-q-section------------------------------------------------------------------------------------------------------------------- -->
+            <div class="question-section" id="html-questions">
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>1.what does HTML stands ?</h5>
+                            <div class="row ">
+                                <div class="col-md-6 mb-3 mt-3">
+                                    <input type="radio" name="q1" value="a">
+                                    <label for="">Hyper Text Markup Language</label>
+                                </div>
+                                <div class="col-md-6 mb-3  mt-3">
+                                    <input type="radio" name="q1" value="b">
+                                    <label for="">Home Tool Markup Language</label>
+                                </div>
+
+                                <div class="col-md-6 mb-4 mt-3">
+                                    <input type="radio" name="q1" value="c">
+                                    <label for="">Hyperlinks and Text markup Language</label>
+                                    <input type="radio" name="q1" checked hidden  value="z">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>2.Who is making the Web standards?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="a">
+                                    <label for="">google</label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="b">
+                                    <label for="">The world wide ceb consortium</label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="c">
+                                    <label for="">microsoft</label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="d">
+                                    <label for="">Mozzilla</label>
+                                    <input type="radio" name="q2" checked hidden  value="z">
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>3.Choose the correct HTML element for the largest heading:</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="a">
+                                    <label for="">
+                                        < head>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="b">
+                                    <label for="">
+                                        < h6>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="c">
+                                    <label for="">
+                                        < heading>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="d">
+                                    <label for="">
+                                        < h1>
+                                    </label>
+                                    <input type="radio" name="q3" checked hidden  value="z">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>4.What is the correct HTML element for inserting a line break?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="a">
+                                    <label for="">
+                                        < br>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="b">
+                                    <label for="">
+                                        < lb>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="c">
+                                    <label for="">
+                                        < break>
+                                    </label>
+                                    <input type="radio" name="q4" checked hidden  value="z">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>5.What is the correct HTML for adding a background color?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="a">
+                                    <label for="">
+                                        < background>yellow< /background>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="b">
+                                    <label for="">
+                                        < body style=" background-color:yellow; ">
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="c">
+                                    <label for="">
+                                        < body bg="yellow">
+                                    </label>
+                                    <input type="radio" name="q5" checked hidden  value="z">
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+
+                            <h5>6.Choose the correct HTML element to define important text</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="a">
+                                    <label for="">
+                                        < strong>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="b">
+                                    <label for="">
+                                        < important>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="c">
+                                    <label for="">
+                                        < b>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="d">
+                                    <label for="">
+                                        < i>
+                                    </label>
+                                    <input type="radio" name="q6" checked hidden  value="z">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ----------------------------------css---------------------------------- q------------------------------------------------------------------------ section -->
+
+            <div class="question-section" id="css-questions">
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>1.what does CSS stands for ?</h5>
+                            <div class="row ">
+                                <div class="col-md-6 mb-3 mt-3">
+                                    <input type="radio" name="q1" value="a">
+                                    <label for="">Cascading Style Sheet</label>
+                                </div>
+                                <div class="col-md-6 mb-3  mt-3">
+                                    <input type="radio" name="q1" value="b">
+                                    <label for="">Creative Style Sheet</label>
+                                </div>
+
+                                <div class="col-md-6 mb-4 mt-3">
+                                    <input type="radio" name="q1" value="c">
+                                    <label for="">colorful style sheet</label>
+                                </div>
+                                <div class="col-md-6 mb-4 mt-3">
+                                    <input type="radio" name="q1" value="d">
+                                    <label for="">Computer Style Sheet</label>
+                                    <input type="radio" name="q1" checked hidden  value="z">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>2.where in an HTML document is the correct place to refer to an external style sheet?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="a">
+                                    <label for="">At the end of the document</label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="b">
+                                    <label for="">In the < body> section</label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="c">
+                                    <label for="">In the < head>section </label>
+                                    <input type="radio" name="q2" checked hidden  value="z">
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>3.Which HTML tag is used to define an internal style sheet?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="a">
+                                    <label for="">
+                                        style
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="b">
+                                    <label for="">
+                                        css
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="c">
+                                    <label for="">
+                                        script
+                                    </label>
+                                    <input type="radio" name="q3" checked hidden  value="z">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>4.Which HTML attribute is used to define inline styles?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="a">
+                                    <label for="">
+                                        class
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="b">
+                                    <label for="">
+                                        style
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="c">
+                                    <label for="">
+                                        font
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="c">
+                                    <label for="">
+                                        styles
+                                    </label>
+                                    <input type="radio" name="q4" checked hidden  value="z">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>5.Which property is used to change the background color?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="a">
+                                    <label for="">
+                                        color
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="b">
+                                    <label for="">
+                                        bgcolor
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="c">
+                                    <label for="">
+                                        background- color
+                                    </label>
+                                    <input type="radio" name="q5" checked hidden  value="z">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+
+                            <h5>6.Which CSS property is used to change the text color of an element?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="a">
+                                    <label for="">
+                                        text- color
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="b">
+                                    <label for="">
+                                        fgcolor
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="c">
+                                    <label for="">
+                                        color
+                                    </label>
+                                    <input type="radio" name="q6" checked hidden  value="z">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--------------------------------- javascript questions----------------------------------------- -->
+
+            <div class="question-section" id="javascript-questions">
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>1.The external JavaScript file must contain the script tag </h5>
+                            <div class="row ">
+                                <div class="col-md-6 mb-3 mt-3">
+                                    <input type="radio" name="q1" value="a">
+                                    <label for="">True</label>
+                                </div>
+                                <div class="col-md-6 mb-3  mt-3">
+                                    <input type="radio" name="q1" value="b">
+                                    <label for="">False</label>
+                                    <input type="radio" name="q1" checked hidden  value="z">
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>2.How do you write "Hello World" in an alert box?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="a">
+                                    <label for="">msg("Hello World")</label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="b">
+                                    <label for="">alert("Hello World"</label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="c">
+                                    <label for="">msgBox("Hello World" </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q2" value="c">
+                                    <label for="">alertBox("Hello World" </label>
+                                    <input type="radio" name="q2" checked hidden  value="z">
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>3.How do you create a function in JavaScript ?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="a">
+                                    <label for="">
+                                        function =myFunction()
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="b">
+                                    <label for="">
+                                        function:myFunction()
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q3" value="c">
+                                    <label for="">
+                                        function myFunction()
+                                    </label>
+                                    <input type="radio" name="q3" checked hidden  value="z">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>4.How do you call a function named "myFunction"?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="a">
+                                    <label for="">
+                                        call myFunction()
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="b">
+                                    <label for="">
+                                        myFunction()
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q4" value="c">
+                                    <label for="">
+                                        call function myFunction()
+                                    </label>
+                                    <input type="radio" name="q4" checked hidden  value="z">
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+                            <h5>5.How to write an IF statement in JavaScript ?</h5>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="a">
+                                    <label for="">
+                                        if(i==5)
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="b">
+                                    <label for="">
+                                        if i=5
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="c">
+                                    <label for="">
+                                        if i=5 then
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q5" value="c">
+                                    <label for="">
+                                        if i==5 then
+                                    </label>
+                                    <input type="radio" name="q5" checked hidden  value="z">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="questions mb-4">
+
+                            <h5>6.
+                                How to write an IF statement for executing some code if "i" is NOT equal to 5?</h5>
+
+
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="a">
+                                    <label for="">
+                                        if i= ! 5 then
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="b">
+                                    <label for="">
+                                        if i <> 5
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="c">
+                                    <label for="">
+                                        if ( i <> )
+                                    </label>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <input type="radio" name="q6" value="d">
+                                    <label for="">
+                                        if ( i !=5 )
+                                    </label>
+                                    <input type="radio" name="q6" checked hidden  value="z">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="contain-result-section" id="result-screen">
+                <div class="result-section">
+
+
+
+                    <p>Get your result</p>
+
+
+
+
+
+                    <button id="btn" class="btn btn-success">CLICK</button>
+
+
+
+
+
+                    <div class="result-screen">
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
